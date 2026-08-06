@@ -10,7 +10,7 @@ function Newsletter() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/subscribe", {
+      const response = await fetch("https://smartmart-backend-3zrn.onrender.com/subscribe", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
