@@ -10,6 +10,7 @@ import Wishlist from "./pages/Wishlist";
 import Laptop from "./pages/Laptop";
 import Headphones from "./pages/Headphones";
 import Watch from "./pages/Watch";
+import LaptopCollection from "./pages/laptopCollection";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/wishlist" element={<Wishlist />} />
-      <Route path="/products/laptop" element={<Laptop />} />
+      <Route path="/laptops" element={<LaptopCollection />} />
+      <Route path="/products/laptop/:type" element={<Laptop />} />
       <Route path="/products/headphones" element={<Headphones />} />
       <Route path="/products/watch" element={<Watch />} />
     </Routes>

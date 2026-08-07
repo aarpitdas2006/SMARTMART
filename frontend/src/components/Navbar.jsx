@@ -38,39 +38,53 @@ const handleSearch = () => {
 };
 
   return (
-    <header>
-      <div className="logo">
-        <Link
-          to="/"
-          style={{ textDecoration: "none", color: "inherit" }}
-        >
-          Smart<span>Mart</span>
-        </Link>
-      </div>
+<header>
 
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/categories">Categories</Link>
-        <Link to="/electronics">Products</Link>
-        <Link to="/wishlist">Wishlist</Link>
+  <div className="logo">
+    <Link
+      to="/"
+      style={{ textDecoration: "none", color: "inherit" }}
+    >
+      Smart<span>Mart</span>
+    </Link>
+  </div>
 
-        <input
-          type="text"
-          placeholder="Search Products"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+  <nav>
 
-        <button onClick={handleSearch}>
-          Search
-        </button>
+    <Link to="/">Home</Link>
 
-        <Link to="/login" className="login-btn">
-          Login
-        </Link>
-      </nav>
-    </header>
-  );
+    <Link to="/categories">Categories</Link>
+
+    <Link to="/electronics">Products</Link>
+
+    <Link to="/wishlist">Wishlist</Link>
+
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search Products"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+
+    <button
+      id="searchBtn"
+      onClick={handleSearch}
+    >
+      Search
+    </button>
+
+    <Link
+      to="/login"
+      className="login-btn"
+    >
+      Login
+    </Link>
+
+  </nav>
+
+</header>
+);
 }
 
 export default Navbar;

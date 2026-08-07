@@ -55,9 +55,12 @@ function Fashion() {
 
             <h3>₹999</h3>
 
-            <Link to="#">
-              View Product
-            </Link>
+            <button
+              className="btn"
+              onClick={() => alert("Order Placed Successfully!")}
+            >
+              Buy Now
+            </button>
 
             <button
               className="wishlist-btn"
@@ -65,6 +68,7 @@ function Fashion() {
                 addToWishlist({
                   name: "Premium Cotton T-Shirt",
                   price: "₹999",
+                  image: tshirt,
                 })
               }
             >
@@ -81,9 +85,12 @@ function Fashion() {
 
             <h3>₹2,499</h3>
 
-            <Link to="#">
-              View Product
-            </Link>
+            <button
+              className="btn"
+              onClick={() => alert("Order Placed Successfully!")}
+            >
+              Buy Now
+            </button>
 
             <button
               className="wishlist-btn"
@@ -91,6 +98,7 @@ function Fashion() {
                 addToWishlist({
                   name: "Casual Sneakers",
                   price: "₹2,499",
+                  image: shoes,
                 })
               }
             >
@@ -107,9 +115,12 @@ function Fashion() {
 
             <h3>₹1,799</h3>
 
-            <Link to="#">
-              View Product
-            </Link>
+            <button
+              className="btn"
+              onClick={() => alert("Order Placed Successfully!")}
+            >
+              Buy Now
+            </button>
 
             <button
               className="wishlist-btn"
@@ -117,6 +128,7 @@ function Fashion() {
                 addToWishlist({
                   name: "Elegant Handbag",
                   price: "₹1,799",
+                  image: handbag,
                 })
               }
             >
@@ -133,9 +145,12 @@ function Fashion() {
 
             <h3>₹1,599</h3>
 
-            <Link to="#">
-              View Product
-            </Link>
+            <button
+              className="btn"
+              onClick={() => alert("Order Placed Successfully!")}
+            >
+              Buy Now
+            </button>
 
             <button
               className="wishlist-btn"
@@ -143,6 +158,7 @@ function Fashion() {
                 addToWishlist({
                   name: "Classic Hoodie",
                   price: "₹1,599",
+                  image: hoodie,
                 })
               }
             >

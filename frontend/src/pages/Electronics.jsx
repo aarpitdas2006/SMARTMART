@@ -54,21 +54,11 @@ function Electronics() {
 
             <h3>₹79,999</h3>
 
-            <Link to="/products/laptop">
+            <Link to="/laptops">
               View Product
             </Link>
 
-            <button
-              className="wishlist-btn"
-              onClick={() =>
-                addToWishlist({
-                  name: "Gaming Laptop",
-                  price: "₹79,999",
-                })
-              }
-            >
-              ❤️ Add to Wishlist
-            </button>
+            
 
           </div>
 
@@ -84,17 +74,7 @@ function Electronics() {
               View Product
             </Link>
 
-            <button
-              className="wishlist-btn"
-              onClick={() =>
-                addToWishlist({
-                  name: "Wireless Headphones",
-                  price: "₹5,999",
-                })
-              }
-            >
-              ❤️ Add to Wishlist
-            </button>
+            
 
           </div>
 
@@ -110,17 +90,7 @@ function Electronics() {
               View Product
             </Link>
 
-            <button
-              className="wishlist-btn"
-              onClick={() =>
-                addToWishlist({
-                  name: "Smart Watch",
-                  price: "₹12,999",
-                })
-              }
-            >
-              ❤️ Add to Wishlist
-            </button>
+            
 
           </div>
 

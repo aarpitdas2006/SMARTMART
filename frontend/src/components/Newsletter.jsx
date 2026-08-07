@@ -33,34 +33,34 @@ function Newsletter() {
   };
 
   return (
-    <section className="newsletter">
+  <section className="newsletter">
 
-      <h2>Stay Updated</h2>
+    <h2>Stay Updated</h2>
 
-      <p>
-        Get notified about new products and exclusive offers.
-      </p>
+    <p>
+      Get notified about new products and exclusive offers.
+    </p>
 
-      <div className="newsletter-box">
+    <div className="newsletter-box">
 
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        <button
-          className="btn"
-          onClick={handleSubscribe}
-        >
-          Subscribe
-        </button>
+      <button
+        className="btn"
+        onClick={handleSubscribe}
+      >
+        Subscribe
+      </button>
 
-      </div>
+    </div>
 
-    </section>
-  );
+  </section>
+);
 }
 
 export default Newsletter;

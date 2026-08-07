@@ -38,44 +38,46 @@ const handleLogin = async () => {
     alert("Unable to connect to the server.");
   }
 };
-  return (
-    <section className="register-page">
-      <div className="register-card">
+ return (
+  <section className="register-page">
 
-        <h1>Welcome Back</h1>
+    <div className="register-card">
 
-        <p className="register-subtitle">
-          Login to your SmartMart account.
-        </p>
+      <h1>Welcome Back</h1>
 
-        <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+      <p className="register-subtitle">
+        Login to your SmartMart account.
+      </p>
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+      <input
+        type="email"
+        placeholder="Email Address"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
 
-        <button onClick={handleLogin}>
-          Login
-        </button>
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
 
-        <p className="login-link">
-          Don't have an account?{" "}
-          <Link to="/register">
-            Create Account
-          </Link>
-        </p>
+      <button onClick={handleLogin}>
+        Login
+      </button>
 
-      </div>
-    </section>
-  );
+      <p className="login-link">
+        Don't have an account?{" "}
+        <Link to="/register">
+          Create Account
+        </Link>
+      </p>
+
+    </div>
+
+  </section>
+);
 }
 
 export default Login;

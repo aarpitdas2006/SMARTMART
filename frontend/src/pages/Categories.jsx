@@ -23,7 +23,7 @@ function Categories() {
         <div className="categories-grid">
 
           {/* Electronics */}
-          <div className="category-card electronics featured-category">
+          <div className="category-card featured-category">
             <h2>Electronics</h2>
 
             <img

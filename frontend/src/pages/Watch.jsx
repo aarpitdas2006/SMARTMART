@@ -33,56 +33,56 @@ function Watch() {
   };
 
   return (
-    <>
-      <Navbar />
+  <>
+    <Navbar />
 
-      <section className="product-details">
+    <section className="product-details">
 
-        <div className="product-image">
-          <img src={watch} alt="Smart Watch" />
-        </div>
+      <div className="product-image">
+        <img src={watch} alt="Smart Watch" />
+      </div>
 
-        <div className="product-info">
+      <div className="product-info">
 
-          <h1>Smart Watch</h1>
+        <h1>Smart Watch</h1>
 
-          <h2>₹12,999</h2>
+        <h2>₹12,999</h2>
 
-          <p>
-            Stay connected and monitor your health with heart-rate tracking,
-            SpO₂ monitoring, GPS, fitness modes, and up to 10 days of battery
-            life.
-          </p>
+        <p>
+          Stay connected and monitor your health with heart-rate tracking,
+          SpO₂ monitoring, GPS, fitness modes, and up to 10 days of battery
+          life.
+        </p>
 
-          <h3>Specifications</h3>
+        <h3>Specifications</h3>
 
-          <ul>
-            <li>AMOLED Display</li>
-            <li>Heart Rate Monitor</li>
-            <li>SpO₂ Sensor</li>
-            <li>GPS</li>
-            <li>10 Days Battery</li>
-          </ul>
+        <ul>
+          <li>AMOLED Display</li>
+          <li>Heart Rate Monitor</li>
+          <li>SpO₂ Sensor</li>
+          <li>GPS</li>
+          <li>10 Days Battery</li>
+        </ul>
 
-          <button className="btn" onClick={addToWishlist}>
-            ❤️ Add to Wishlist
-          </button>
+        <button className="btn" onClick={addToWishlist}>
+          ❤️ Add to Wishlist
+        </button>
 
-          <button
-            className="btn"
-            style={{ marginLeft: "15px" }}
-            onClick={() => alert("Order Placed Successfully!")}
-          >
-            Buy Now
-          </button>
+        <button
+          className="btn"
+          style={{ marginLeft: "15px" }}
+          onClick={() => alert("Order Placed Successfully!")}
+        >
+          Buy Now
+        </button>
 
-        </div>
+      </div>
 
-      </section>
+    </section>
 
-      <Footer />
-    </>
-  );
+    <Footer />
+  </>
+);
 }
 
 export default Watch;

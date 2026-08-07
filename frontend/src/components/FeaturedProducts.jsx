@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import laptop from "../assets/images/laptop.png";
 import headphones from "../assets/images/headphones.png";
 import watch from "../assets/images/watch.png";
@@ -17,7 +19,9 @@ function FeaturedProducts() {
 
           <p>₹65,000</p>
 
-          <a href="#">View Product</a>
+          <Link to="/products/laptop">
+            View Product
+          </Link>
         </div>
 
         <div className="product">
@@ -27,7 +31,9 @@ function FeaturedProducts() {
 
           <p>₹3,499</p>
 
-          <a href="#">View Product</a>
+          <Link to="/products/headphones">
+            View Product
+          </Link>
         </div>
 
         <div className="product">
@@ -37,7 +43,9 @@ function FeaturedProducts() {
 
           <p>₹5,999</p>
 
-          <a href="#">View Product</a>
+          <Link to="/products/watch">
+            View Product
+          </Link>
         </div>
 
       </div>
