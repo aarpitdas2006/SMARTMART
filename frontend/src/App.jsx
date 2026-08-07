@@ -10,7 +10,6 @@ import Wishlist from "./pages/Wishlist";
 import Laptop from "./pages/Laptop";
 import Headphones from "./pages/Headphones";
 import Watch from "./pages/Watch";
-import "./app.css";
 
 function App() {
   return (
