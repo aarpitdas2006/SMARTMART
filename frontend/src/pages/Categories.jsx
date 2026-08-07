@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -19,6 +21,8 @@ function Categories() {
         </p>
 
         <div className="categories-grid">
+
+          {/* Electronics */}
           <div className="category-card electronics featured-category">
             <h2>Electronics</h2>
 
@@ -33,11 +37,12 @@ function Categories() {
               and entertainment.
             </p>
 
-            <button className="explore-btn">
+            <Link to="/electronics" className="explore-btn">
               Explore →
-            </button>
+            </Link>
           </div>
 
+          {/* Fashion */}
           <div className="category-card featured-category">
             <h2>Fashion</h2>
 
@@ -53,11 +58,12 @@ function Categories() {
               style to every wardrobe.
             </p>
 
-            <button className="explore-btn">
+            <Link to="/fashion" className="explore-btn">
               Explore →
-            </button>
+            </Link>
           </div>
 
+          {/* Home */}
           <div className="category-card home-category">
             <h2>Home & Living</h2>
 
@@ -77,6 +83,7 @@ function Categories() {
             </span>
           </div>
 
+          {/* Gaming */}
           <div className="category-card gaming-category">
             <h2>Gaming</h2>
 
@@ -95,6 +102,7 @@ function Categories() {
               Coming Soon
             </span>
           </div>
+
         </div>
       </section>
 
